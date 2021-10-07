@@ -50,6 +50,10 @@ color: white;
     left: -100%;
     transition: 0.5s;
 }
+.profile
+{
+    display: none;
+}
 .sidebar ul
 {
     list-style: none;
@@ -127,6 +131,7 @@ color: white;
 }
 .logincard
 {
+    display: none;
     position:absolute;
     top: 70px;
     left: 35%;

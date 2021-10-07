@@ -12,7 +12,7 @@
     <div class="header">
       <img src="./assest/logo.png" alt="" />
       <h1>Solution Provider</h1>
-      <a href="" class="login" onclick="myfunction()">Login</a>
+      <a href="" class="login" id="login" onclick="myfunction()">Login</a>
     </div>
     
     <input type="checkbox" name="" id="chk">
@@ -26,12 +26,12 @@
     </div>
     <div class="sidebar">
         <ul>
-            <li><a href=""><i class="fa fa-home"></i><span>HOME</span></a></li>
-            <li><a href=""><i class="fa fa-user"></i><span>PROFILE</span></a></li>
-            <li><a href=""><i class="fa fa-tasks"></i><span>CATEGORY</span></a></li>
-            <li><a href=""><i class="fa fa-edit"></i><span>REVIEW</span></a></li>
-            <li><a href=""><i class="fa fa-info-circle"></i><span>ABOUT US</span></a></li>
-            <li><a href=""><i class="fa fa-question-circle"></i><span>HELP</span></a></li>
+            <li><a href="#"><i class="fa fa-home"></i><span>HOME</span></a></li>
+            <li class="profile" id="profile"><a href="#"><i class="fa fa-user"></i><span>PROFILE</span></a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i><span>CATEGORY</span></a></li>
+            <li><a href="#"><i class="fa fa-edit"></i><span>REVIEW</span></a></li>
+            <li><a href="#"><i class="fa fa-info-circle"></i><span>ABOUT US</span></a></li>
+            <li><a href="#"><i class="fa fa-question-circle"></i><span>HELP</span></a></li>
         </ul>
         <div class="social">
             <a href=""><i class="fa fa-facebook-square"></i></a>
@@ -45,7 +45,7 @@
       <form action="">
         <input type="text" placeholder="Username or Email"><br>
         <input type="password" placeholder="Password"><br>
-        <button type="button">Login</button><br>
+        <button type="button" onclick="myfunction1()">Login</button><br>
       </form>
         <a class="forgotpass" href="">Forgot Password?</a>
         <a class="signup" href="">Sign up</a><br>
