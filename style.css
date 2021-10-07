@@ -26,12 +26,14 @@ color: white;
 {
     font-size: 25px;
     position: absolute;
+    top: 3px;
     right: 15px;
     text-decoration: none;
     line-height: 70px;
     color: white;
     text-transform: uppercase;
 }
+
 .content
 {
     width: 100%;
@@ -126,7 +128,7 @@ color: white;
 .logincard
 {
     position:absolute;
-    top: 50px;
+    top: 70px;
     left: 35%;
     background-image: linear-gradient(#353b48,#fff);
     width: 30%;
