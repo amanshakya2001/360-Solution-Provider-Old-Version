@@ -8,6 +8,7 @@ function myfunction(){
     {
         document.getElementById("profile").style.display ="none";
         document.getElementById("login").innerHTML = "LOGIN";
+        alert("Logout Successfully");
         a++;
     }
     event.preventDefault();
@@ -16,4 +17,5 @@ function myfunction1(){
         document.getElementById("logincard").style.display = "none";
         document.getElementById("profile").style.display ="block";
         document.getElementById("login").innerHTML = "LOGOUT";
+        alert("Login Successfully");
 }
