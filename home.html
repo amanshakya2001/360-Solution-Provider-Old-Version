@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <style>
-        h1
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main
         {
             text-align: center;
-            color: black;
+            background: -webkit-linear-gradient(left,red, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             line-height: 100px;
             text-transform: uppercase;
         }
@@ -31,16 +39,75 @@
             color: white;
             font-size: 15px;
         }
+        .row
+        {
+            display: flex;
+            width: 100%;
+            height: auto;
+            background-color: black;
+            margin: 0;
+        }
+        .col-7
+        {
+            width: 70%;
+            padding: 15px;
+        }
+        .col-7 h1
+        {
+            font-size: 20px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: white;
+            font-style: italic;
+            text-align: center;
+        }
+        .col-7 h1 span
+        {
+            color: purple;
+            font-size: 30px;
+            font-style: italic;
+        }
+        .col-3
+        {
+            margin: 0;
+            width: 30%;
+            border-left: 2px solid white;
+            padding: 15px;
+        }
+        .col-3 h2
+        {
+            color: white;
+            text-align: center;
+        }
+        .col-3 p
+        {
+            text-align: center;
+            margin: 15px;
+            color: white;
+            text-align: left;
+        }
         </style>
 </head>
 <body>
-    <h1>how can i help you???</h1>
+    <h1 class="main">how can i help you???</h1>
     <div class="row">
-        <div class="col-7"></div>
-        <div class="col-3"></div>
+        <div class="col-7">
+            <h1>"i can <span>try</span> to help<br> you to make the right<br> choices... But its <span>your</span><br> choice to say yes or<br> no to my offer..."</h1>
+        </div>
+        <div class="col-3">
+            <h2>Rating & Review</h2>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Great Solutions...
+                helped us alot.
+            </p>
+            <p>⭐⭐⭐⭐</p>
+            <p>
+                Provided quick solution.
+            </p>
+        </div>
     </div>
     <footer>
-        <h6>Copyright &copy; 2019 Approval Academic Consulting LLC. All Rights Reserved</h6>
+        <h6>Copyright &copy; 2021 Approval Academic Consulting LLC. All Rights Reserved</h6>
     </footer>
 </body>
 </html>
