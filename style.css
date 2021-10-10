@@ -184,7 +184,7 @@ color: white;
 .logincard  a 
 {
     text-decoration: none;
-    color: blue;
+    color: rgb(67, 67, 199);
     font-weight: bold;
 }
 .logincard p 
