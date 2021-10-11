@@ -19,3 +19,6 @@ function myfunction1(){
         document.getElementById("login").innerHTML = "LOGOUT";
         alert("Login Successfully");
 }
+function sidebar(){
+    document.getElementById('chk').checked = false;
+}
