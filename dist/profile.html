@@ -6,15 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <style>
-        h1
+        *
         {
-            text-align: center;
-            color: yellow;
-            line-height: 100px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+       .container
+       {
+           background-color: lightgray;
+           padding: 15px;
+           height: auto;
+           width: 100%;
+       }
+       .container img
+       {
+            display: block;
+            margin: auto;
+            width: 10%;
+            border-radius: 50%;
+       }
+       .container h6
+       {
+           text-align:start;
+           font-size: 30px;
+           margin: 15px;
+           margin-left: 500px;
+       }
+       .container span
+       {
+        border: 2px solid gray;
+        padding: 5px;
+       }
+       .container button
+       {
+           padding: 5px;
+           font-size: 30px;
+           border: 0;
+           background-color: green;
+       }
     </style>
 </head>
 <body>
-    <h1>This is Profile Page</h1>
+    <div class="container" id="container">
+        <img src="./assest/avtar.jpeg" alt="">
+        <h6 id="text">Name <span>Vikas Gola</span></h6>
+        <h6 id="text">Email <span>me_huu_420@gmail.com</span></h6></h6>
+        <h6 id="text">Phone No <span>90840*****</span></h6></h6>
+        <h6 id="text">Linked Account <span>pata nhi</span></h6></h6>
+        <h6 id="text">Location <span>Taaron ke sahar maain</span></h6></h6>
+        <h6 id="text">Notification <button id="noti" onclick="myfunction()">ON</button></h6></h6>
+        <h6 id="text">Query History <span>Vikas Gola</span></h6></h6>
+        <h6 id="text">Joined Date <span>15-Jan-1730</span></h6></h6>
+        <h6 id="text">Location <button id="loc" onclick="myfunction1()">ON</button></h6></h6>
+        <h6 id="text">Dark Mode <button id="dark" onclick="myfunction2()">ON</button></h6></h6>
+    </div>
+    <script>
+        var count = 0;
+        function myfunction(){
+            if(count %2 == 0)
+            {
+                document.getElementById("noti").style.backgroundColor = "red";
+                document.getElementById("noti").innerHTML = "OFF";
+                count++;
+            }
+            else
+            {
+                document.getElementById("noti").style.backgroundColor = "green";
+                document.getElementById("noti").innerHTML = "ON"; 
+                count++;
+            }
+        }
+        function myfunction1(){
+            if(count %2 == 0)
+            {
+                document.getElementById("loc").style.backgroundColor = "red";
+                document.getElementById("loc").innerHTML = "OFF";
+                count++;
+            }
+            else
+            {
+                document.getElementById("loc").style.backgroundColor = "green";
+                document.getElementById("loc").innerHTML = "ON"; 
+                count++;
+            }
+        }
+        function myfunction2(){
+            if(count %2 == 0)
+            {
+                document.getElementById("dark").style.backgroundColor = "red";
+                document.getElementById("dark").innerHTML = "OFF";
+                document.getElementById("container").style.backgroundColor = "white";
+                document.getElementById("text").style.color = "black";
+                count++;
+            }
+            else
+            {
+                document.getElementById("dark").style.backgroundColor = "green";
+                document.getElementById("dark").innerHTML = "ON"; 
+                document.getElementById("container").style.backgroundColor = "black";
+                document.getElementById("text").style.color = "white";
+                count++;
+            }
+        }
+    </script>
 </body>
 </html>
