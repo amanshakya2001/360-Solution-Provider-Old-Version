@@ -27,7 +27,7 @@
         justify-content: center;
         align-items: center;
         bottom: 0;
-        position: fixed;
+        position: absolute;
         margin: 0;
         left: 0;
       }
@@ -98,12 +98,7 @@
           margin: 15px;
         }
         .main {
-          text-align: center;
-          background: -webkit-linear-gradient(left, red, blue);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
           line-height: 60px;
-          text-transform: uppercase;
         }
         .row
         {
@@ -112,6 +107,10 @@
         .col-7,.col-3
         {
           width: 100%;
+        }
+        .col-3
+        {
+          border: 0;
         }
       }
     </style>
