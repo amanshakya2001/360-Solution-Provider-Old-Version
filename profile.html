@@ -60,15 +60,15 @@
     <div class="container" id="container">
         <img src="./assest/avtar.jpeg" alt="">
         <h6 id="text">Name <span>Vikas Gola</span></h6>
-        <h6 id="text">Email <span>me_huu_420@gmail.com</span></h6></h6>
-        <h6 id="text">Phone No <span>90840*****</span></h6></h6>
-        <h6 id="text">Linked Account <span>pata nhi</span></h6></h6>
-        <h6 id="text">Location <span>Taaron ke sahar maain</span></h6></h6>
-        <h6 id="text">Notification <button id="noti" onclick="myfunction()">OFF</button></h6></h6>
-        <h6 id="text">Query History <span>Vikas Gola</span></h6></h6>
-        <h6 id="text">Joined Date <span>15-Jan-1730</span></h6></h6>
-        <h6 id="text">Location <button id="loc" onclick="myfunction1()">OFF</button></h6></h6>
-        <h6 id="text">Dark Mode <button id="dark" onclick="myfunction2()">OFF</button></h6></h6>
+        <h6 id="text">Email <span>me_huu_420@gmail.com</span></h6>
+        <h6 id="text">Phone No <span>90840*****</span></h6>
+        <h6 id="text">Linked Account <span>pata nhi</span></h6>
+        <h6 id="text">Location <span>Taaron ke sahar maain</span></h6>
+        <h6 id="text">Notification <button id="noti" onclick="myfunction()" style="background-color: green;">ON</button></h6>
+        <h6 id="text">Query History <span>Vikas Gola</span></h6>
+        <h6 id="text">Joined Date <span>15-Jan-1730</span></h6>
+        <h6 id="text">Location <button id="loc" onclick="myfunction1()">OFF</button></h6>
+        <h6 id="text">Dark Mode <button id="dark" onclick="myfunction2()">OFF</button></h6>
     </div>
     <script>
         var count = 0;
@@ -101,7 +101,7 @@
             }
         }
         function myfunction2(){
-            if(count %2 == 0)
+            if(count %2 != 0)
             {
                 document.getElementById("dark").style.backgroundColor = "red";
                 document.getElementById("dark").innerHTML = "OFF";
