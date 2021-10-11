@@ -46,6 +46,11 @@
            background-color: red;
            margin-left: 30px;
        }
+       .container textarea
+       {
+           padding: 15px;
+           font-size: 30px;
+       }
        @media(max-width:700px)
        {
         .container h6
@@ -71,7 +76,7 @@
         <h6 id="text3">Linked Account <span>pata nhi</span></h6>
         <h6 id="text4">Location <span>Taaron ke sahar maain</span></h6>
         <h6 id="text5">Notification <button id="noti" onclick="myfunction()" style="background-color: green;">ON</button></h6>
-        <h6 id="text6">Query History <span>koi meri sadhi krrwa do</span></h6>
+        <h6 id="text6">Query History <textarea name="" id="textarea" cols="15" rows="3">koi meri shadi krrwa do</textarea></h6>
         <h6 id="text7">Joined Date <span>15-Jan-1730</span></h6>
         <h6 id="text8">Location <button id="loc" onclick="myfunction1()">OFF</button></h6>
         <h6 id="text9">Dark Mode <button id="dark" onclick="myfunction2()">OFF</button></h6>
@@ -112,6 +117,8 @@
                 document.getElementById("dark").style.backgroundColor = "red";
                 document.getElementById("dark").innerHTML = "OFF";
                 document.getElementById("container").style.backgroundColor = "white";
+                document.getElementById("textarea").style.backgroundColor = "white";
+                document.getElementById("textarea").style.color = "black";
                 document.getElementById("text").style.color = "black";
                 document.getElementById("text2").style.color = "black";
                 document.getElementById("text3").style.color = "black";
@@ -129,6 +136,8 @@
                 document.getElementById("dark").style.backgroundColor = "green";
                 document.getElementById("dark").innerHTML = "ON"; 
                 document.getElementById("container").style.backgroundColor = "black";
+                document.getElementById("textarea").style.backgroundColor = "black";
+                document.getElementById("textarea").style.color = "white";
                 document.getElementById("text").style.color = "white";
                 document.getElementById("text1").style.color = "white";
                 document.getElementById("text2").style.color = "white";
