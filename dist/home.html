@@ -38,6 +38,7 @@
         {
             color: white;
             font-size: 15px;
+            text-align: center;
         }
         .row
         {
@@ -75,7 +76,9 @@
         }
         .col-7 p span
         {
-            color: blue;
+            background: -webkit-linear-gradient(left, skyblue,pink);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-size: 30px;
             font-style: italic;
             text-align: center;
@@ -102,9 +105,15 @@
         }
         @media(max-width:700px) {
             .star
-            { font-size: 10px;
-                
+            { 
+                font-size: 10px;
             }
+            .col-7 p 
+        {
+            color: white;
+            margin:15px ;
+
+        }
             
         }
         </style>
