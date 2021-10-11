@@ -10,6 +10,7 @@ function myfunction() {
     document.getElementById("profile").style.display = "none";
     document.getElementById("login").innerHTML = "LOGIN";
     alert("Logout Successfully");
+    document.getElementById('frame1').setAttribute("src", "./home.html");
     a++;
   }
 
