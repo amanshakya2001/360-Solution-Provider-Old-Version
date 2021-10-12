@@ -25,8 +25,9 @@
         margin-bottom: 15px;
         border-radius: 10px;
         opacity: 0.7;
+        transition:all 1.5s;
+        text-align: center;
       }
-      
       .main {
         text-align: center;
         background: -webkit-linear-gradient(left, red, blue);
@@ -34,7 +35,26 @@
         -webkit-text-fill-color: transparent;
         line-height: 100px;
         text-transform: uppercase;
-        transition: .5s;
+      }
+      .mainhindi {
+        text-align: center;
+        background: -webkit-linear-gradient(left, red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 100px;
+        display: none;
+      }
+      .box:hover
+      {
+        transform: rotateY(360deg);
+      }
+      .box:hover > .main
+      {
+        display: none;
+      }
+      .box:hover > .mainhindi
+      {
+        display: block;
       }
       footer {
         width: 100%;
@@ -137,6 +157,7 @@
   <body>
     <div class="box">
     <h1 class="main">how can i help you???</h1>
+    <h1 class="mainhindi">में आपकी कैसे मदद कर सकता हूं???</h1>
     </div>
     <div class="row">
       <div class="col-7">
