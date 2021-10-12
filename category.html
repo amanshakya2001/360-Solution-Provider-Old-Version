@@ -25,7 +25,6 @@
             width:50%;
             height: fit-content;
             text-align: center;
-            margin: 15px;
             padding: 15px;
         }
         .col-50 img
@@ -62,6 +61,30 @@
         {
             color: goldenrod;
         }
+        @media (max-width:700px)
+        {
+            .row
+            {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .col-50
+            {
+                width: 100%;
+            }
+            .col-50 .odd,.col-50 .even
+            {
+                text-align: center;
+            }
+            .mec2
+            {
+                order: 1;
+            }
+            .mec
+            {
+                order: 2;
+            }
+        }
     </style>
 </head>
 <body>
@@ -85,7 +108,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-50">
+            <div class="col-50 mec">
                 <ul class="even">
                     <li><a href="#">3D and 2D Design Analysis</a></li>
                     <li><a href="#">3D Design</a></li>
@@ -94,7 +117,7 @@
                     <li><a href="#">3D Router</a></li>
                 </ul>
             </div>
-            <div class="col-50">
+            <div class="col-50 mec2">
                 <img src="./assest/cat2.png" alt="">
                 <h1>Mechanical Services</h1></div>
         </div>
