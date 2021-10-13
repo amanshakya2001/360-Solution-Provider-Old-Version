@@ -16,7 +16,6 @@
       }
       .container {
         margin: 0;
-        padding: 15px;
       }
       .container .about {
         margin: 50px;
@@ -30,29 +29,41 @@
       .container .row {
         width: 100%;
         display: flex;
-        margin-top: 15px;
-        margin-bottom: 50px;
+        flex: wrap;
+        margin: 15px;
       }
-      .container .row .col-50 {
+      .col-50 {
         width: 50%;
         text-align: center;
       }
-      .container .row .col-50 img {
+      .container .row .col-50 img 
+      {
         display: block;
         margin: auto;
         width: 30%;
         margin-bottom: 5px;
         margin-top: 5px;
+        border-radius: 70px;
+        transition: 0.6s;
       }
-      .container .row .textodd {
-        padding: 30px;
+      .container .row .col-50 img:hover
+      {
+        width: 40%;
+      }
+      .container .row .textodd  p{
         text-align: justify;
         margin-right: 300px;
       }
-      .container .row .texteven {
-        padding: 30px;
+      .container .row .texteven p {
         text-align: justify;
         margin-left: 300px;
+
+      }
+      @media(max-width:700px)
+      {
+          .container .row .col-50 {
+          width: 100%;
+      }
       }
     </style>
   </head>
@@ -71,7 +82,7 @@
     <div class="container">
       <div class="row">
         <div class="col-50">
-          <img src="assest/avtar.jpeg" alt="" />
+          <img src="assest/1.jpg"  alt="" />
           <h1>Vikas Gola</h1>
           <h3>Founder</h3>
         </div>
@@ -94,6 +105,7 @@
       </div>
       <div class="row">
         <div class="col-50 texteven">
+          <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
           doloribus. Consequuntur, culpa autem! Et eveniet quae eos soluta,
           voluptate incidunt maxime cum excepturi, nostrum id ex. Ducimus
@@ -106,20 +118,22 @@
           esse eum ex, quod iure ullam voluptas quae enim quasi in eligendi
           ipsam autem impedit quibusdam distinctio sit aliquid, incidunt tempora
           perspiciatis.
+        </p>
         </div>
         <div class="col-50">
-          <img src="assest/avtar.jpeg" alt="" />
+          <img src="assest/2.jpg" alt="" />
           <h1>Aman Shakya</h1>
           <h3>Co-Founder</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-50">
-          <img src="assest/avtar.jpeg" alt="" />
+          <img src="assest/3.jpg" alt="" />
           <h1>Tarun Gupta</h1>
           <h3>Co-Founder</h3>
         </div>
         <div class="col-50 textodd">
+          <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
           excepturi optio qui recusandae repellendus perferendis sit quibusdam
           veniam! Blanditiis ipsam nam saepe molestiae libero accusantium,
@@ -132,10 +146,12 @@
           aliquam veniam, debitis laboriosam? Voluptate impedit architecto
           repellat, aspernatur dolor sequi voluptatibus laborum fuga numquam et
           unde laudantium!
+        </p>
         </div>
       </div>
       <div class="row">
         <div class="col-50 texteven">
+          <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
           excepturi, facere cum aspernatur ipsa tempore deleniti laboriosam
           autem perspiciatis voluptate quia. Libero rerum modi eveniet sit
@@ -147,20 +163,22 @@
           hic, repudiandae vitae dolore commodi exercitationem sed in, porro
           amet deleniti, dolorum nesciunt odit accusamus perspiciatis! Aut
           doloribus voluptate earum atque, quis hic ut culpa corrupti illo.
+        </p>
         </div>
         <div class="col-50">
-          <img src="assest/avtar.jpeg" alt="" />
+          <img src="assest/4.jpg" alt="" />
           <h1>Taruwarsh Kumar</h1>
-          <h3>C.E.O</h3>
+          <h3>Senior Developer</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-50">
-          <img src="assest/avtar.jpeg" alt="" />
+          <img src="assest/5.jpeg" alt="" />
           <h1>Animesh Dixit</h1>
           <h3>Senior Graphic Designer</h3>
         </div>
         <div class="col-50 textodd">
+          <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
           quam veniam alias facere impedit quod quae perferendis similique autem
           doloremque quisquam ea at, odio dolor porro sed, libero dignissimos,
@@ -173,10 +191,12 @@
           perferendis, et praesentium adipisci? Ducimus, ad eveniet assumenda
           provident veritatis ut accusantium voluptatem ratione hic aspernatur!
           Veritatis, at soluta.
+        </p>
         </div>
       </div>
       <div class="row">
         <div class="col-50 texteven">
+          <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
           accusantium vitae architecto officiis sit, quo alias fuga? Esse
           doloribus aliquid asperiores quam laborum, eos iure architecto eum.
@@ -188,9 +208,10 @@
           accusamus, id ducimus explicabo aliquid nostrum quasi earum. Rem,
           asperiores, officia sit ipsam excepturi assumenda eius impedit
           repellat perferendis, quos incidunt ipsum hic inventore!
+        </p>
         </div>
         <div class="col-50">
-          <img src="assest/avtar.jpeg" alt="" />
+          <img src="assest/6.jpg" alt="" />
           <h1>Astha Verma</h1>
           <h3>Social Media Manager</h3>
         </div>
