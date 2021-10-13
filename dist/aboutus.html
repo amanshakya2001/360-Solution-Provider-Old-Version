@@ -11,8 +11,10 @@
         padding: 0;
         box-sizing: border-box;
       }
-      body {
+      body 
+      {
         margin: 0;
+        background-image: linear-gradient(to right,skyblue,pink);        
       }
       .container {
         margin: 0;
@@ -29,8 +31,7 @@
       .container .row {
         width: 100%;
         display: flex;
-        flex: wrap;
-        margin: 15px;
+        flex-wrap: wrap;
       }
       .col-50 {
         width: 50%;
@@ -59,12 +60,33 @@
         margin-left: 300px;
 
       }
-      @media(max-width:700px)
+      @media (max-width:700px)
       {
-          .container .row .col-50 {
-          width: 100%;
-      }
-      }
+          .row
+          {
+            display: block;
+          }
+          .col-50
+          {
+            width: 100%;
+          }
+          .container .row .textodd  p{
+            text-align: justify;
+            margin: 15px;
+          }
+        .container .row .texteven p {
+          text-align: justify;
+          margin: 15px;
+        }
+        .texteven
+        {
+          order: 2;
+        }
+        .row .imgeven
+        {
+          order: 1;
+        } 
+    }
     </style>
   </head>
   <body>
@@ -120,7 +142,7 @@
           perspiciatis.
         </p>
         </div>
-        <div class="col-50">
+        <div class="col-50 imgeven">
           <img src="assest/2.jpg" alt="" />
           <h1>Aman Shakya</h1>
           <h3>Co-Founder</h3>
