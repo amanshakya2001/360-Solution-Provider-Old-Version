@@ -27,4 +27,9 @@ function myfunction1() {
 function sidebar() {
   document.getElementById('chk').checked = false;
 }
+
+function review() {
+  alert("Review Submit Successfully");
+  location.reload();
+}
 //# sourceMappingURL=javascript.dev.js.map
