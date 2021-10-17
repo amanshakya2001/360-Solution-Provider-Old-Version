@@ -12,9 +12,12 @@
             padding: 0;
             box-sizing: border-box;
         }
+        body
+        {
+            background-image: linear-gradient(to right,skyblue,pink);
+        }
        .container
        {
-           background-color: white;
            padding: 15px;
            height: 150vh;
            width: 100%;
@@ -67,7 +70,8 @@
        }
        .container textarea
        {
-           padding: 15px;
+           background: transparent;
+            padding: 15px;
            font-size: 15px;
            margin: 15px;
        }
@@ -128,7 +132,7 @@
             {
                 document.getElementById("dark").style.backgroundColor = "red";
                 document.getElementById("dark").innerHTML = "OFF";
-                document.getElementById("container").style.backgroundColor = "white";
+                document.getElementById("body").style.backgroundColor = "white";
                 document.getElementById("textarea").style.backgroundColor = "white";
                 document.getElementById("textarea").style.color = "black";
                 document.getElementById("text").style.color = "black";
