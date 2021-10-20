@@ -134,42 +134,42 @@ color: white;
     padding: 0;
     padding-top: 50px;
 }
-.logincard
+.logincard,.signupcard
 {
     display: none;
     position:absolute;
     top: 70px;
     left: 35%;
-    background-image: linear-gradient(#353b48,#fff);
+    background-image: linear-gradient(#3E5151,#DECBA4);
     width: 30%;
     height: 70%;
     margin-top: 30px;
     text-align: center;
 }
-.logincard img
+.logincard img,.signupcard img
 {
     display: block;
     width: 20%;
     margin: auto;
 }
-.logincard h6
+.logincard h6,.signupcard h6
 {
     text-align: center;
     color: white;
 }
-.logincard form
+.logincard form,.signupcard form
 {
     margin: 15px;
     display: block;
 }
-.logincard form input
+.logincard form input,.signupcard form input
 {
     width:100%;
     margin:5px auto;
     padding: 5px;
     font-size: 15px;
 }
-.logincard form button
+.logincard form button,.signupcard form button
 {
     width: 100%;
     margin: 15px auto;
@@ -181,7 +181,7 @@ color: white;
     border: 0;
     border-radius: 10px;
 }
-.logincard form button:hover
+.logincard form button:hover,.sign form button:hover
 {
     background-color: #ff4747;
 }

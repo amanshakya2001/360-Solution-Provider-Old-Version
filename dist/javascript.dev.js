@@ -1,6 +1,7 @@
 "use strict";
 
 var a = 0;
+var username = "";
 
 function myfunction() {
   if (a % 2 == 0) {
@@ -12,6 +13,8 @@ function myfunction() {
     alert("Logout Successfully");
     document.querySelector(".text").value = "";
     document.querySelector(".password").value = "";
+    document.querySelector(".text").style.border = "0";
+    document.querySelector(".password").style.border = "0";
     document.getElementById("frame1").setAttribute("src", "./home.html");
     a++;
   }
@@ -37,7 +40,7 @@ function myfunction1() {
     document.getElementById("profile").style.display = "block";
     document.getElementById("login").innerHTML = "LOGOUT";
     alert("Login Successfully");
-    document.querySelector(".text").value = document.querySelector(".username").value;
+    username = document.querySelector(".username").value;
   }
 }
 
@@ -48,5 +51,9 @@ function sidebar() {
 function review() {
   alert("Review Submit Successfully");
   location.reload();
+}
+
+function signup() {
+  document.querySelector(".signupcard").style.display = "block";
 }
 //# sourceMappingURL=javascript.dev.js.map

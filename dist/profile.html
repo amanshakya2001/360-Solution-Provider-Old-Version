@@ -14,7 +14,7 @@
         }
        .container
        {
-            background-image: linear-gradient(to right,skyblue,pink);
+            background-image: linear-gradient(to right,#F3904F,#3B4371);
            padding: 15px;
            height: 150vh;
            width: 100%;
@@ -79,7 +79,7 @@
        }
     </style>
 </head>
-<body id="body">
+<body id="body" onload="onload()">
     <div class="container" id="container">
         <img src="./assest/avtar.jpeg" alt="">
         <h6 id="text" >Name <span class="text">Vikas Gola</span></h6>
@@ -165,6 +165,11 @@
             }
         }
     </script>
-    <script src="./javascript.js"></script>
+    <script src="./javascript.js">
+        function onload()
+        {
+            document.querySelector(".text").value = username;
+        }
+    </script>
 </body>
 </html>
