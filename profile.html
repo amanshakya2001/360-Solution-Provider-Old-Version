@@ -82,7 +82,7 @@
 </head>
 <body id="body" onload="profile()">
     <div class="container" id="container">
-        <img src="./assest/avtar.jpeg" alt="">
+        <img src="./assest/avtar.jpeg" id="image" alt="">
         <h6 id="text" >Name <span id="name">Vikas Gola</span></h6>
         <h6 id="text1">Email <span id="email">vikas.gola_me19@gla.ac.in</span></h6>
         <h6 id="text2">Phone No. <span id="no">9897643759</span></h6>
@@ -183,6 +183,7 @@
             }
             else if(username == "aman shakya")
             {
+                document.getElementById("image").setAttribute("src","./assest/aman.jpg")
                 document.getElementById("name").innerHTML = username;
                 document.getElementById("email").innerHTML = "aman.shakya_cs19@gla.ac.in";
                 document.getElementById("no").innerHTML = "7017691164";
@@ -201,6 +202,7 @@
             }
             else if(username == "animesh dixit")
             {
+                document.getElementById("image").setAttribute("src","./assest/animesh.jpeg")
                 document.getElementById("name").innerHTML = username;
                 document.getElementById("email").innerHTML = "animesh.dixit_cs19@gla.ac.in";
                 document.getElementById("no").innerHTML = "7309479007";
@@ -210,6 +212,7 @@
             }
             else if(username == "astha verma")
             {
+                document.getElementById("image").setAttribute("src","./assest/astha.jpg")
                 document.getElementById("name").innerHTML = username;
                 document.getElementById("email").innerHTML = "astha.verma_cs19@gla.ac.in";
                 document.getElementById("no").innerHTML = "7895188415";
