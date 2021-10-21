@@ -27,7 +27,7 @@ function myfunction1()
     document.querySelector(".password").style.border = "2px solid red";
   } 
   
-  else if (document.querySelector(".text").value =="vikas gola" && document.querySelector(".password").value == "24112000" )
+  else if (document.querySelector(".text").value =="vikas gola" && document.querySelector(".password").value == "24111999" )
   {
     document.getElementById("logincard").style.display = "none";
     document.getElementById("profile").style.display = "block";
@@ -66,7 +66,7 @@ function myfunction1()
     username = document.querySelector("#username").value;
     localStorage.setItem("username",username);
   }
-  else if(document.querySelector(".text").value =="animesh dixit" && document.querySelector(".password").value == "09062000")
+  else if(document.querySelector(".text").value =="animesh dixit" && document.querySelector(".password").value == "09062001")
   {
    
     document.getElementById("logincard").style.display = "none";
