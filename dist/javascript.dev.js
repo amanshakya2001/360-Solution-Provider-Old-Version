@@ -31,6 +31,8 @@ function myfunction1() {
     alert("Enter Username");
     document.querySelector(".text").style.border = "2px solid red";
     document.querySelector(".password").style.border = "2px solid green";
+  } else if (document.querySelector(".text").value != "vikas gola" && document.querySelector(".text").value != "tarun gupta" && document.querySelector(".text").value != "aman shakya" && document.querySelector(".text").value != "taruwarsh kumar" && document.querySelector(".text").value != "animesh dixit" && document.querySelector(".text").value != "astha verma") {
+    alert("Not a Valid User");
   } else if (document.querySelector(".password").value == "") {
     alert("Enter Password");
     document.querySelector(".text").style.border = "2px solid green";
@@ -40,7 +42,8 @@ function myfunction1() {
     document.getElementById("profile").style.display = "block";
     document.getElementById("login").innerHTML = "LOGOUT";
     alert("Login Successfully");
-    username = document.querySelector(".username").value;
+    username = document.querySelector("#username").value;
+    localStorage.setItem("username", username);
   }
 }
 

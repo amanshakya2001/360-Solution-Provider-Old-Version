@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+    <script src="./javascript.js"></script>
     <style>
         *
         {
@@ -79,18 +80,18 @@
        }
     </style>
 </head>
-<body id="body" onload="onload()">
+<body id="body" onload="profile()">
     <div class="container" id="container">
         <img src="./assest/avtar.jpeg" alt="">
-        <h6 id="text" >Name <span class="text">Vikas Gola</span></h6>
-        <h6 id="text1">Email <span>360solutionprovider@gmail.com</span></h6>
-        <h6 id="text2">Phone No. <span>9897643759</span></h6>
-        <h6 id="text3">Linked Account <span>Vikas Gola</span></h6>
-        <h6 id="text4">Location <span>GLA University,Mathura</span></h6>
+        <h6 id="text" >Name <span id="name">Vikas Gola</span></h6>
+        <h6 id="text1">Email <span id="email">vikas.gola_me19@gla.ac.in</span></h6>
+        <h6 id="text2">Phone No. <span id="no">9897643759</span></h6>
+        <h6 id="text3">Linked Account <span id="account">Vikas Gola</span></h6>
+        <h6 id="text4">Location <span id="location">GLA University,Mathura</span></h6>
         <h6 id="text5">Notification <button id="noti" onclick="myfunction()" style="background-color: green;">ON</button></h6>
         <h6 id="text6">Query History </h6>
         <textarea name="" id="textarea" cols="15" rows="3">3D modelling dimensioning</textarea>
-        <h6 id="text7">Joined Date <span>24-Nov-1999</span></h6>
+        <h6 id="text7">Joined Date <span id="date">25-July-2016</span></h6>
         <h6 id="text8">Location <button id="loc" onclick="myfunction1()">OFF</button></h6>
         <h6 id="text9">Dark Mode <button id="dark" onclick="myfunction2()">OFF</button></h6>
     </div>
@@ -164,11 +165,58 @@
                 count++;
             }
         }
-    </script>
-    <script src="./javascript.js">
-        function onload()
+        function profile()
         {
-            document.querySelector(".text").value = username;
+            var username = localStorage.getItem("username");
+            if(username == "vikas gola")
+            {
+                document.getElementById("name").innerHTML = username;
+            }
+            else if(username == "tarun gupta")
+            {
+                document.getElementById("name").innerHTML = username;
+                document.getElementById("email").innerHTML = "tarun.gupta_cs19@gla.ac.in";
+                document.getElementById("no").innerHTML = "8077688011";
+                document.getElementById("account").innerHTML = "Tarun Gupta";
+                document.getElementById("textarea").innerHTML = "Want to Know about Thingworx";
+                document.getElementById("date").innerHTML = "16-March-2020";
+            }
+            else if(username == "aman shakya")
+            {
+                document.getElementById("name").innerHTML = username;
+                document.getElementById("email").innerHTML = "aman.shakya_cs19@gla.ac.in";
+                document.getElementById("no").innerHTML = "7017691164";
+                document.getElementById("account").innerHTML = "Aman Shakya";
+                document.getElementById("textarea").innerHTML = "Make a Android App for college";
+                document.getElementById("date").innerHTML = "18-June-2012";
+            }
+            else if(username == "taruwarsh kumar")
+            {
+                document.getElementById("name").innerHTML = username;
+                document.getElementById("email").innerHTML = "taruwarsh.kumar_cs19@gla.ac.in";
+                document.getElementById("no").innerHTML = "9369575630";
+                document.getElementById("account").innerHTML = "Taruwarsh kumar";
+                document.getElementById("textarea").innerHTML = "Want make a Graphic Design";
+                document.getElementById("date").innerHTML = "10-Nov-2015";
+            }
+            else if(username == "animesh dixit")
+            {
+                document.getElementById("name").innerHTML = username;
+                document.getElementById("email").innerHTML = "animesh.dixit_cs19@gla.ac.in";
+                document.getElementById("no").innerHTML = "7309479007";
+                document.getElementById("account").innerHTML = "Animesh Dixit";
+                document.getElementById("textarea").innerHTML = "Shaadi krrwa do";
+                document.getElementById("date").innerHTML = "20-Oct-2021";
+            }
+            else if(username == "astha verma")
+            {
+                document.getElementById("name").innerHTML = username;
+                document.getElementById("email").innerHTML = "astha.verma_cs19@gla.ac.in";
+                document.getElementById("no").innerHTML = "7895188415";
+                document.getElementById("account").innerHTML = "Astha Verma";
+                document.getElementById("textarea").innerHTML = "Want make a House Design";
+                document.getElementById("date").innerHTML = "18-March-2015";
+            }
         }
     </script>
 </body>
