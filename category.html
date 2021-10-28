@@ -65,6 +65,7 @@
         }
         .form
         {
+            display: none;
             width: 30%;
             background-color: black;
             position: fixed;
@@ -162,6 +163,10 @@
             {
                 order: 2;
             }
+            .form
+            {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -174,25 +179,25 @@
             </div>
             <div class="col-50">
                 <ul class="odd">
-                    <li><a href="#">Software Issue</a></li>
-                    <li><a href="#">Internet of Everything</a></li>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">Ui/Ux</a></li>
-                    <li><a href="#">Artificial Intelligence</a></li>
-                    <li><a href="#">Graphic Designer</a></li>
-                    <li><a href="#">App Development</a></li>
-                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#" onclick="display()">Software Issue</a></li>
+                    <li><a href="#" onclick="display()">Internet of Everything</a></li>
+                    <li><a href="#" onclick="display()">Web Development</a></li>
+                    <li><a href="#" onclick="display()">Ui/Ux</a></li>
+                    <li><a href="#" onclick="display()">Artificial Intelligence</a></li>
+                    <li><a href="#" onclick="display()">Graphic Designer</a></li>
+                    <li><a href="#" onclick="display()">App Development</a></li>
+                    <li><a href="#" onclick="display()">Machine Learning</a></li>
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-50 mec">
                 <ul class="even">
-                    <li><a href="#">3D and 2D Design Analysis</a></li>
-                    <li><a href="#">3D Design</a></li>
-                    <li><a href="#">Master CAM</a></li>
-                    <li><a href="#">VMC</a></li>
-                    <li><a href="#">3D Router</a></li>
+                    <li><a href="#" onclick="display()">3D and 2D Design Analysis</a></li>
+                    <li><a href="#" onclick="display()">3D Design</a></li>
+                    <li><a href="#" onclick="display()">Master CAM</a></li>
+                    <li><a href="#" onclick="display()">VMC</a></li>
+                    <li><a href="#" onclick="display()">3D Router</a></li>
                 </ul>
             </div>
             <div class="col-50 mec2">
@@ -206,12 +211,12 @@
             </div>
             <div class="col-50">
                 <ul class="odd">
-                    <li><a href="#">Under Graduation</a></li>
-                    <li><a href="#">Post Graduation</a></li>
-                    <li><a href="#">High School</a></li>
-                    <li><a href="#">Intermediate School</a></li>
-                    <li><a href="#">Primary School</a></li>
-                    <li><a href="#">Secondary School</a></li>
+                    <li><a href="#" onclick="display()">Under Graduation</a></li>
+                    <li><a href="#" onclick="display()">Post Graduation</a></li>
+                    <li><a href="#" onclick="display()">High School</a></li>
+                    <li><a href="#" onclick="display()">Intermediate School</a></li>
+                    <li><a href="#" onclick="display()">Primary School</a></li>
+                    <li><a href="#" onclick="display()">Secondary School</a></li>
                 </ul>
             </div>
         </div>
@@ -229,6 +234,10 @@
     </div>
 </body>
 <script>
+    function display()
+    {
+        document.querySelector(".form").style.display = "block";
+    }
     function formclose()
     {
         document.querySelector(".form").style.display = "none";
