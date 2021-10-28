@@ -206,7 +206,7 @@ color: white;
     margin-right: 20px;
     float: right;
 }
-.logincard i 
+.logincard i,.signupcard i
 {
     font-size: 35px;
     margin: 5px;
@@ -222,6 +222,13 @@ color: white;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+}
+.formcancel
+{
+    color:white;
+    position: absolute;
+    right: 2px;
+    top: 2px;
 }
 @media(max-width:768px)
 {

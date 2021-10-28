@@ -115,3 +115,9 @@ function signup()
 {
   document.querySelector(".signupcard").style.display = "block";
 }
+function formclose()
+{
+  document.querySelector(".signupcard").style.display = "none";
+  document.querySelector(".logincard").style.display = "none";
+  a = 0;
+}
