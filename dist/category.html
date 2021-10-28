@@ -210,9 +210,9 @@
         <h1>Query Form</h1>
         <form action="">
             <label for="Email" placeholder="Email">Email</label>
-            <input type="text"><br>
+            <input type="text" class="email"><br>
             <label for="Query">Query</label><br>
-            <textarea name="" id=""></textarea>
+            <textarea name="" id="" class="query"></textarea>
         </form>
         <a onclick="formsubmit()">Submit</a>
     </div>
@@ -230,6 +230,8 @@
     {
         document.querySelector(".form").style.display = "none";
         alert("Query submited we will contact you soon.......Have a Nice day");
+        document.querySelector(".email").innerHTML = "";
+        document.querySelector(".query").innerHTML = "";
     }
 </script>
 </html>
