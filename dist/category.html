@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         *{margin: 0;padding: 0;box-sizing: border-box;}
         body
         {
-            background-image:linear-gradient(to right,#F3904F,#3B4371);
+            background-image:linear-gradient(to right,#b993d6,#8ca6db);
         }
         .container
         {
@@ -65,7 +67,7 @@
         {
             width: 30%;
             background-color: black;
-            position: absolute;
+            position: fixed;
             top: 20px;
             left: 35%;
             padding: 30px;
@@ -76,22 +78,48 @@
             margin: 15px;
             text-align: center;
         }
-        .form label
+        .form form label
         {
             color: purple;
             font-weight: bolder;
-            margin: 15px;
         }
         .form input
         {
             width: 100%;
-            margin: 5px;
+            margin-top: 5px;
+            margin-bottom: 15px;
         }
         .form textarea
         {
             width: 100%;
             height: 25vh;
-            margin: 5px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        .form a
+        {
+            text-align: center;
+            display: block;
+            background-color: purple;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bolder;
+        }
+        .form a:hover
+        {
+            color: white;
+            background-color: red;
+        }
+        .form .fa-times
+        {
+            color: white;
+            float: right;
+            font-size: 30px;
+        }
+        .fa-times:hover
+        {
+            color: gold;
         }
         @media (max-width:700px)
         {
@@ -171,6 +199,7 @@
         </div>
     </div>
     <div class="form">
+        <i class="fa fa-times" onclick="formclose()"></i>
         <h1>Query Form</h1>
         <form action="">
             <label for="Email" placeholder="Email">Email</label>
@@ -178,6 +207,18 @@
             <label for="Query">Query</label><br>
             <textarea name="" id=""></textarea>
         </form>
+        <a onclick="formsubmit()">Submit</a>
     </div>
 </body>
+<script>
+    function formclose()
+    {
+        document.querySelector(".form").style.display = "none";
+    }
+    function formsubmit()
+    {
+        document.querySelector(".form").style.display = "none";
+        alert("Query submited we will contact you soon.......Have a Nice day");
+    }
+</script>
 </html>
